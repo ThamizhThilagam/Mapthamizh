@@ -1,0 +1,21 @@
+public class Main {
+public static void main(String[] args) {
+Scanner scanner = new scanner(System.in);
+List<Integer> arrayInput = new ArrayList<>();
+while(scanner.hasNextInt()){
+arrayInput.add(scanner.nextInt());
+}
+Map<String,Integer> mapOutpur = new HashMap();
+for(int index=0; index < arrayInput.size(); index++){
+int arrayValue = arrayInput get(index);
+String key = arrayValue>=0 ? "positive" : "negative";
+if(mapOutput.containsKey(key)){
+int existingCount = mapOutput.get(key);
+mapOutput.put(key,existingCount+1);
+} else {
+mapOutput.put(key,1);
+}
+}
+System.out.println(mapOutput);
+}
+}
